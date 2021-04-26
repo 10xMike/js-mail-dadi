@@ -10,13 +10,18 @@ if (mail == "michele@gmail.com"){
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
     var playerdicenumber = Math.floor( Math.random() * 6 ) +1;
     console.log(playerdicenumber);
+    document.getElementById("playerdicenumber").innerHTML = playerdicenumber
+
     var computerdicenumber = Math.floor( Math.random() * 6) +1;
     console.log(computerdicenumber);
+    document.getElementById("computerdicenumber").innerHTML = computerdicenumber
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if (playerdicenumber > computerdicenumber) {
     console.log("you win")
+    document.getElementById("game").innerHTML = "You Win"
   } else {
     console.log("you lose")
+    document.getElementById("game").innerHTML = "You Lose"
   }
