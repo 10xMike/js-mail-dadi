@@ -10,17 +10,20 @@ if (mail == "michele@gmail.com"){
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
     var playerdicenumber = Math.floor( Math.random() * 6 ) +1;
     console.log(playerdicenumber);
-    document.getElementById("playerdicenumber").innerHTML = playerdicenumber
+    document.getElementById("playerdicenumber").innerHTML = "Il risultato del tuo dado è " + playerdicenumber;
 
     var computerdicenumber = Math.floor( Math.random() * 6) +1;
     console.log(computerdicenumber);
-    document.getElementById("computerdicenumber").innerHTML = computerdicenumber
+    document.getElementById("computerdicenumber").innerHTML = "Il risultato del dado del PC è " + computerdicenumber;
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if (playerdicenumber > computerdicenumber) {
     console.log("you win")
     document.getElementById("game").innerHTML = "You Win"
+  } if else (playerdicenumber = computerdicenumber){
+    console.log("it's a draw")
+    document.getElementById("game").innerHTML = "It's a Draw"
   } else {
     console.log("you lose")
     document.getElementById("game").innerHTML = "You Lose"
