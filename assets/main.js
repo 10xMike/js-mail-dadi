@@ -4,7 +4,7 @@
 // controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo
 
 if (mail == "michele@gmail.com"){
-    document.getElementById("mail").innerHTML = "Access Granted"
+    document.getElementById("email").innerHTML = "Access Granted";
 }
 
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer
@@ -21,7 +21,7 @@ if (mail == "michele@gmail.com"){
 if (playerdicenumber > computerdicenumber) {
     console.log("you win")
     document.getElementById("game").innerHTML = "You Win"
-  } if else (playerdicenumber = computerdicenumber){
+  } else if (playerdicenumber == computerdicenumber){
     console.log("it's a draw")
     document.getElementById("game").innerHTML = "It's a Draw"
   } else {
